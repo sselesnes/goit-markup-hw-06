@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -16,9 +17,8 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Webstudio</title>
   </head>
-
   <body>
-    <!-- header -->
+    <!-- #region header -->
     <header class="page-header-top">
       <div class="container page-header-container">
         <nav class="page-header">
@@ -49,10 +49,10 @@
         </address>
       </div>
     </header>
-
+    <!-- #endregion header -->
     <main>
-      <!-- section 1 -->
-      <section class="benefit-section">
+      <!-- #region hero section 1 -->
+      <section class="benefit-section" hidden>
         <div class="container">
           <h1 class="benefit-title-headline">
             Effective Solutions for Your Business
@@ -60,9 +60,9 @@
           <button class="order-button" type="button">Order Service</button>
         </div>
       </section>
-
-      <!-- section 2 -->
-      <section class="benefit-list-section">
+      <!-- #endregion hero section 1 -->
+      <!-- #region benefits section 2 -->
+      <section class="benefit-list-section" hidden>
         <div class="container">
           <h2 class="visually-hidden">Why we are better than others</h2>
           <ul class="benefit-item-list">
@@ -118,9 +118,9 @@
           </ul>
         </div>
       </section>
-
-      <!-- section 3 -->
-      <section class="our-team-section">
+      <!-- #endregion benefits section 2 -->
+      <!-- #region team section 3 -->
+      <section class="our-team-section" hidden>
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
@@ -303,10 +303,9 @@
           </ul>
         </div>
       </section>
-
-      <!-- section 4 -->
-
-      <section class="project-section">
+      <!-- #endregion team section 3 -->
+      <!-- #region project section 4 -->
+      <section class="project-section" hidden>
         <div class="container">
           <h2 class="project-title">Our Portfolio</h2>
           <ul class="project-list">
@@ -433,10 +432,10 @@
           </ul>
         </div>
       </section>
+      <!-- #endregion project section 4 -->
     </main>
-    <!-- footer -->
-
-    <footer class="page-footer">
+    <!-- #region footer -->
+    <footer class="page-footer" hidden>
       <div class="container footer-grid">
         <div class="footer-logo-cell">
           <a class="mainlogo footer-logo" href="./index.html"
@@ -505,9 +504,9 @@
         </div>
       </div>
     </footer>
-
-    <!-- form modal is-open-->
-    <div class="modal-overlay is-open">
+    <!-- #endregion footer -->
+    <!-- #region form-modal is-open-->
+    <div class="modal-overlay is-open" hidden>
       <div class="modal">
         <button class="form-close-button" type="button">
           <svg height="8" width="8" class="form-icon-close">
@@ -588,6 +587,6 @@
         </form>
       </div>
     </div>
-    <!-- form modal end -->
+    <!-- #endregion form-modal-->
   </body>
 </html>

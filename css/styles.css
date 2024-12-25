@@ -1,13 +1,13 @@
 /* -----init----- */
 
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
-} */
+}
 
 body {
-  background-color: #fff;
+  background-color: #f00;
   font-family: 'Roboto', sans-serif;
   color: #434455;
 }
@@ -94,12 +94,12 @@ img {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.17;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: #4d5ae5;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 16px 0;
+  padding: 17.5px 0;
   display: block;
 }
 
@@ -120,9 +120,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  /* .page-header-top {
-    height: 72px;
-  } */
+  .page-header-top {
+    /* height: 72px; */
+  }
 
   .page-header {
     display: flex;

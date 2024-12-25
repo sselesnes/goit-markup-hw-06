@@ -1,14 +1,17 @@
+/* -----init----- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
 /* -----header----- */
-
-.page-header {
-  display: flex;
-  align-items: center;
-}
 
 .header-menu,
 .header-adress {

@@ -166,19 +166,11 @@ img {
     background-color: #404bbf;
   }
 
-  /* .header-nav:active {
-    text-decoration: underline;
-  } */
-
   .header-adress {
     display: flex;
     flex-direction: column;
+    line-height: 0;
     gap: 12px;
-  }
-
-  .header-adress-list {
-    margin: 0;
-    padding: 0;
   }
 
   .header-contacts {
@@ -209,9 +201,15 @@ img {
 
   .header-adress {
     display: flex;
-    margin-top: 0;
-    margin-bottom: 0;
-    /* gap: 12px;
-    padding: 0 16px; */
+    flex-direction: row;
+    padding: 24px, 0;
+    gap: 40px;
+  }
+
+  .header-contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
   }
 }

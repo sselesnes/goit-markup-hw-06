@@ -45,14 +45,6 @@ section {
   padding: 24px 0;
 }
 
-.mainlogo-header-studio-part {
-  color: #2e2f42;
-}
-
-.mainlogo-footer-studio-part {
-  color: #f4f4fd;
-}
-
 .header-nav:active {
   text-decoration: underline;
 }

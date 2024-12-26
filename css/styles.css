@@ -224,7 +224,7 @@ img {
 /* #endregion header*/
 /* #region hero */
 
-.benefit-section {
+.hero-section {
   background: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -239,6 +239,64 @@ img {
   min-height: 432px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/m/people-office@2.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/t/people-office.jpg);
+    max-width: 768px;
+    min-height: 436px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/t/people-office@2.jpg);
+    max-width: 768px;
+    min-height: 436px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/d/people-office.jpg);
+    max-width: 1440px;
+    min-height: 600px;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/d/people-office@2.jpg);
+    max-width: 1440px;
+    min-height: 600px;
+  }
 }
 
 .benefit-title-headline {
@@ -274,21 +332,6 @@ img {
 .order-button:hover,
 .order-button:focus {
   background: #404bbf;
-}
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .benefit-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/m/people-office@2.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1158px) {
 }
 
 /* #endregion hero */

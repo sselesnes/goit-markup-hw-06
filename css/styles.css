@@ -299,7 +299,7 @@ img {
   }
 }
 
-.benefit-title-headline {
+.hero-title-headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 111%;
@@ -307,7 +307,23 @@ img {
   text-align: center;
   color: #fff;
   padding: 72px 0;
-  margin: 0;
+  margin: auto;
+  max-width: 216px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title-headline {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    padding: 112px 0 36px 0;
+    max-width: 496px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero-title-headline {
+    padding: 188px 0 48px 0;
+  }
 }
 
 .order-button {

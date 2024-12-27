@@ -15,7 +15,7 @@ h1,
 h2,
 h3,
 p {
-  margin-top: 0;
+  margin: 0;
 }
 
 a {
@@ -349,8 +349,52 @@ img {
 }
 /* #endregion hero */
 /* #region benefits */
+
+.benefit-item-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 96px;
+  gap: 72px;
+}
+
+.benefit-item {
+  max-width: 288px;
+}
+
 .benefit-icon-card {
   display: none;
 }
 
+.benefit-item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.benefit-item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #434455;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+}
+
 /* #endregion benefits */
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1158px) {
+}

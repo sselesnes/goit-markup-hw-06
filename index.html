@@ -320,13 +320,20 @@
           <ul class="project-list">
             <li class="project-item">
               <div class="project-pic">
-                <img
-                  src="./images/banking-app.jpg"
-                  alt="Banking
+                <picture
+                  ><source
+                    srcset="
+                      ./images/m/banking-app.jpg,
+                      ./images/m/banking-app@2.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    width="288"
+                    height="280" />
+                  <img
+                    src="./images/m/banking-app.jpg"
+                    alt="Banking
             App"
-                  width="360"
-                  height="300"
-                />
+                /></picture>
                 <p class="project-overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App

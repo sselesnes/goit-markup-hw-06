@@ -242,7 +242,7 @@ img {
   margin-bottom: 96px;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
+@media screen and (resolution >= 2dppx) and (max-width: 767px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -264,7 +264,7 @@ img {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) {
+@media screen and (resolution >= 2dppx) and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -289,7 +289,7 @@ img {
   }
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1158px) {
+@media screen and (resolution >= 2dppx) and (min-width: 1158px) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -373,18 +373,16 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin: 0;
   padding-bottom: 8px;
 }
 
 .benefit-item-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 151%;
   letter-spacing: 0.02em;
   text-align: left;
   color: #434455;
-  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -432,8 +430,6 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
-    letter-spacing: 0.02em;
-
     color: #2e2f42;
     padding-bottom: 8px;
   }
@@ -442,14 +438,123 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    letter-spacing: 0.02em;
     color: #434455;
+  }
+
+  .benefit-icon-card {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4fd;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .benefit-icon {
+    fill: #2e2f42;
   }
 }
 
 /* #endregion benefits */
+/* #region team */
+.our-team-section {
+  background-color: #f4f4fd;
+}
 
-@media screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding-top: 96px;
+}
+
+.team-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 96px;
+}
+
+.team-member {
+  margin-top: 72px;
+  width: 264px;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 1px 0 #2e2f4214, 0 1px 1px 0 #2e2f4229,
+    0 1px 6px 0 #2e2f4214;
+}
+
+.team-member-card {
+  padding: 32px 0;
+  background-color: #fff;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.team-member-job-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+  margin-bottom: 8px;
+}
+
+/* team-member-card-trailing */
+.tmct {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0 16px;
+}
+
+.tmct-icon {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tmct-icon-ellipse,
+.ft-icon-ellipse {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tmct-icon-ellipse:hover,
+.tmct-icon-ellipse:focus {
+  background-color: #404bbf;
+}
+
+.tmct-icon-svg,
+.ft-icon-svg {
+  fill: #f4f4fd;
+}
+
+/* #endregion team */
+@media screen and (resolution >= 2dppx) and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) {

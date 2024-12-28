@@ -84,23 +84,8 @@ section {
   letter-spacing: 0.02em;
   margin-bottom: 0;
 }
-.benefit-icon-card {
-  width: 264px;
-  height: 112px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f4f4fd;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
 
-.benefit-icon {
-  fill: #2e2f42;
-}
-
-/* -----section 3----- */
+/* -----team section 3----- */
 .our-team-section {
   background-color: #f4f4fd;
 }

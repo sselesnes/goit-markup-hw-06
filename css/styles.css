@@ -234,7 +234,6 @@ img {
   min-height: 432px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 96px;
 }
 
 @media screen and (resolution >= 2dppx) and (max-width: 767px) {
@@ -280,7 +279,6 @@ img {
       url(../images/d/people-office.jpg);
     max-width: 1440px;
     min-height: 600px;
-    margin-bottom: 120px;
   }
 }
 
@@ -349,6 +347,7 @@ img {
 .benefit-item-list {
   display: flex;
   flex-direction: column;
+  margin-top: 96px;
   margin-bottom: 96px;
   gap: 72px;
 }
@@ -382,12 +381,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .benefit-item-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 96px;
-    row-gap: 72px;
     column-gap: 24px;
   }
 
@@ -402,11 +397,8 @@ img {
 
 @media screen and (min-width: 1158px) {
   .benefit-item-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 96px;
+    margin-top: 120px;
+    margin-bottom: 120px;
   }
 
   .benefit-item {

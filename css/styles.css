@@ -1,10 +1,10 @@
 /* #region init */
-
+/* 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -52,7 +52,7 @@ img {
 
 .container {
   max-width: 320px;
-  padding: 0 16px;
+  padding: 96px 16px;
   margin: 0 auto;
 }
 
@@ -82,6 +82,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 16px;
 }
 
 .header-nav {
@@ -104,15 +105,11 @@ img {
   letter-spacing: 0.03em;
   color: #4d5ae5;
   display: block;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
 .mainlogo-header-studio-part {
   color: #2e2f42;
-}
-.mainlogo-footer-studio-part {
-  color: #f4f4fd;
 }
 
 .header-menu-mobile-button {
@@ -182,7 +179,6 @@ img {
     line-height: 1.167;
     letter-spacing: 0.04em;
     color: #434455;
-    text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -220,6 +216,9 @@ img {
 }
 /* #endregion header*/
 /* #region hero */
+.hero-grid {
+  padding: 0;
+}
 
 .hero-section {
   background: #2e2f42;
@@ -345,9 +344,6 @@ img {
 }
 /* #endregion hero */
 /* #region benefits */
-.benefit-section {
-  padding: 96px 0;
-}
 
 .benefit-item-list {
   display: flex;
@@ -448,7 +444,6 @@ img {
 /* #region team */
 .team-section {
   background-color: #f4f4fd;
-  padding: 96px 0;
 }
 
 .team-title {
@@ -558,10 +553,6 @@ img {
 /* #endregion team */
 /* #region project */
 
-.project-section {
-  padding: 96px 0;
-}
-
 .project-title {
   font-weight: 700;
   font-size: 36px;
@@ -654,6 +645,7 @@ img {
 
 /* #endregion project */
 /* #region footer */
+
 .page-footer {
   background: #2e2f42;
   font-weight: 400;
@@ -662,12 +654,38 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   text-align: left;
-  padding: 97.5px 0 96px;
 }
 
 .footer-grid {
   display: flex;
   flex-direction: column;
+  gap: 72px;
+}
+
+.footer-cell,
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  padding: 1.5px 0 17.5px;
+}
+
+.footer-social-text,
+.footer-subscribe-text {
+  padding-bottom: 16px;
+}
+
+.mainlogo-footer-studio-part {
+  color: #f4f4fd;
+}
+
+.ft-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 
 /* #endregion footer */

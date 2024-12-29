@@ -343,12 +343,13 @@ img {
 }
 /* #endregion hero */
 /* #region benefits */
+.benefit-section {
+  padding: 96px 0;
+}
 
 .benefit-item-list {
   display: flex;
   flex-direction: column;
-  margin-top: 96px;
-  margin-bottom: 96px;
   gap: 72px;
 }
 
@@ -396,9 +397,8 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .benefit-item-list {
-    margin-top: 120px;
-    margin-bottom: 120px;
+  .benefit-section {
+    padding: 120px 0;
   }
 
   .benefit-item {
@@ -444,8 +444,9 @@ img {
 
 /* #endregion benefits */
 /* #region team */
-.our-team-section {
+.team-section {
   background-color: #f4f4fd;
+  padding: 96px 0;
 }
 
 .team-title {
@@ -455,7 +456,6 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-top: 96px;
   padding-bottom: 72px;
 }
 
@@ -463,7 +463,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 96px;
   row-gap: 72px;
 }
 
@@ -549,24 +548,24 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .team-title {
-    padding-top: 120px;
-  }
-
-  .team-list {
-    padding-bottom: 120px;
+  .team-section {
+    padding: 120px 0;
   }
 }
 
 /* #endregion team */
 /* #region project */
+
+.project-section {
+  padding: 96px 0;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11111;
   color: #2e2f42;
   text-align: center;
-  padding-top: 96px;
   padding-bottom: 72px;
 }
 
@@ -608,14 +607,44 @@ img {
 }
 
 .project-card {
+  padding: 32px 0;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
 
 .project-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
   text-align: left;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px;
+  padding-bottom: 8px;
+}
+
+.project-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  text-align: left;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-list {
+    justify-content: space-between;
+    row-gap: 72px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .project-list {
+    justify-content: space-between;
+    row-gap: 40px;
+  }
 }
 
 /* #endregion project */

@@ -193,6 +193,10 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .header-grid {
+    padding: 0 15px;
+  }
+
   .header-section {
     padding: 24px 0;
   }
@@ -625,9 +629,6 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .project-section {
-    padding: 120px 0;
-  }
   .project-list {
     row-gap: 40px;
   }
@@ -678,7 +679,7 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
+  .footer-grid {
     padding: 100px 15px;
   }
 }

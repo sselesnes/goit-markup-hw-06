@@ -71,14 +71,22 @@ img {
 /* #endregion common */
 /* #region header*/
 
-.page-header-top {
+.header-section {
+  padding: 16px 0;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
-.page-header-container {
+.header-grid {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+
   align-items: center;
   justify-content: space-between;
 }
@@ -95,10 +103,9 @@ img {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: #4d5ae5;
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 17.5px 0;
-  display: block;
 }
 
 .mainlogo-header-studio-part {
@@ -121,14 +128,8 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .page-header {
-    display: flex;
-    align-items: center;
-  }
-
   .mainlogo {
-    padding: 25.5px 0;
-    margin-right: 120px;
+    padding-right: 120px;
   }
 
   .header-menu {
@@ -138,8 +139,6 @@ img {
   }
 
   .header-nav {
-    display: block;
-    padding: 24px 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -163,7 +162,7 @@ img {
     position: absolute;
     width: 100%;
     left: 0;
-    bottom: -1px;
+    bottom: -25px;
     height: 4px;
     border-radius: 2px;
     background-color: #404bbf;
@@ -198,8 +197,11 @@ img {
 }
 
 @media screen and (min-width: 1158px) {
+  .header-section {
+    padding: 24px 0;
+  }
   .mainlogo {
-    margin-right: 76px;
+    padding-right: 76px;
   }
 
   .header-adress {
@@ -589,6 +591,7 @@ img {
 .project-item:hover .project-overlay {
   transform: translateY(0%);
 }
+
 .project-overlay {
   background-color: #4d5ae5;
   font-weight: 400;
@@ -650,7 +653,24 @@ img {
 }
 
 /* #endregion project */
+/* #region footer */
+.page-footer {
+  background: #2e2f42;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  text-align: left;
+  padding: 97.5px 0 96px;
+}
 
+.footer-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #endregion footer */
 @media screen and (resolution >= 2dppx) and (max-width: 767px) {
 }
 

@@ -1,0 +1,153 @@
+/* #region header*/
+
+.header-section {
+  padding: 16px 0;
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
+
+.header-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu,
+.header-adress {
+  display: none;
+}
+
+.mainlogo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+}
+
+.mainlogo-header-studio-part {
+  color: #2e2f42;
+}
+.mainlogo-footer-studio-part {
+  color: #f4f4fd;
+}
+
+.header-menu-mobile-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-menu-mobile-icon {
+  display: block;
+  fill: #2f2f37;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .mainlogo {
+    /* padding: 9.5px 0; 16+9.5=25.5 */
+    padding-right: 120px;
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-nav {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-nav:hover,
+  .header-nav:focus,
+  .header-nav.current {
+    color: #404bbf;
+  }
+
+  .header-nav.current {
+    position: relative;
+  }
+
+  .header-nav.current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
+  }
+
+  .header-adress {
+    display: flex;
+    flex-direction: column;
+    line-height: 0;
+    gap: 12px;
+  }
+
+  .header-contacts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.04em;
+    color: #434455;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-contacts:hover,
+  .header-contacts:focus {
+    color: #404bbf;
+  }
+
+  .header-menu-mobile-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .mainlogo {
+    margin-right: 76px;
+  }
+
+  .header-adress {
+    display: flex;
+    flex-direction: row;
+    padding: 24px, 0;
+    gap: 40px;
+  }
+
+  .header-contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+}
+/* #endregion header*/

@@ -678,6 +678,72 @@ img {
   gap: 16px;
 }
 
+.ft-icon-ellipse:hover,
+.ft-icon-ellipse:focus {
+  background-color: #31d0aa;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* gap: 24px; */
+}
+
+.footer-subscribe-label {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
+}
+
+.footer-subscribe-input {
+  height: 40px;
+  width: 288px;
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  font-family: inherit;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.6;
+}
+.footer-subscribe-input::placeholder {
+  color: #fff;
+}
+
+.footer-subscribe-button {
+  margin-top: 16px;
+  height: 40px;
+  padding: 8px 24px;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  background-color: #4d5ae5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+}
+.subscribe-icon {
+  margin-left: 16px;
+  fill: #fff;
+}
+
+@media screen and (min-width: 768px) {
+}
+
 @media screen and (min-width: 1158px) {
   .footer-grid {
     padding: 100px 15px;

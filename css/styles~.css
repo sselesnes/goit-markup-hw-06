@@ -251,11 +251,6 @@ section {
   margin-right: 80px;
 }
 
-.ft-icon-ellipse:hover,
-.ft-icon-ellipse:focus {
-  background-color: #31d0aa;
-}
-
 .footer-subscribe-text {
   display: flex;
   width: 264px;

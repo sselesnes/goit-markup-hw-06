@@ -784,6 +784,11 @@ img {
 @media screen and (min-width: 1158px) {
   .footer-grid {
     padding: 100px 15px;
+    gap: 120px;
+  }
+
+  .footer-subscribe {
+    margin-left: -96px;
   }
 }
 

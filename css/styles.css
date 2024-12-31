@@ -13,6 +13,7 @@ p {
 
 a {
   text-decoration: none;
+  font-style: normal;
 }
 
 ul,
@@ -165,7 +166,6 @@ img {
   }
 
   .header-contacts {
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.167;
@@ -1105,7 +1105,7 @@ img {
 
 .nav-modal-adress {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 24px;
 }
 

@@ -27,10 +27,10 @@
           >
           <ul class="header-menu">
             <li>
-              <a class="header-nav current" href="./index.html">Studio</a>
+              <a class="header-nav-item current" href="./index.html">Studio</a>
             </li>
-            <li><a class="header-nav" href="">Portfolio</a></li>
-            <li><a class="header-nav" href="">Contacts</a></li>
+            <li><a class="header-nav-item" href="">Portfolio</a></li>
+            <li><a class="header-nav-item" href="">Contacts</a></li>
           </ul>
         </nav>
         <address>
@@ -728,5 +728,74 @@
       </div>
     </div>
     <!-- #endregion form-modal-->
+    <!-- #region nav-modal is-open-->
+    <div class="nav-overlay">
+      <div class="nav-modal">
+        <button class="form-close-button" type="button">
+          <svg height="8" width="8" class="form-icon-close">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="nav-modal-flex">
+          <nav>
+            <ul class="nav-modal-list">
+              <li>
+                <a class="nav-modal-item" href="./index.html">Studio</a>
+              </li>
+              <li><a class="nav-modal-item" href="">Portfolio</a></li>
+              <li><a class="nav-modal-item" href="">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-modal-footer">
+            <address>
+              <ul class="nav-modal-adress">
+                <li>
+                  <a class="nav-modal-contacts" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-modal-contacts" href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="nav-modal-social">
+              <li class="ft-icon">
+                <a class="ft-icon-ellipse" href="#">
+                  <svg class="ft-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="ft-icon">
+                <a class="ft-icon-ellipse" href="#">
+                  <svg class="ft-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="ft-icon">
+                <a class="ft-icon-ellipse" href="#">
+                  <svg class="ft-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="ft-icon">
+                <a class="ft-icon-ellipse" href="#">
+                  <svg class="ft-icon-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion menu-modal is-open-->
   </body>
 </html>

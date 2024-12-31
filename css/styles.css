@@ -227,13 +227,9 @@ img {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-
-  /* обрав tablet bg.jpg, щоб не було білих полос на viewport`ах з width > 320px - наприклад Pixel7 - 420px */
-
-  /* max-width: 320px; */
-  min-height: 432px;
   margin-left: auto;
   margin-right: auto;
+  padding: 72px 0;
 }
 
 @media screen and (resolution >= 2dppx) and (max-width: 767px) {
@@ -254,7 +250,7 @@ img {
       ),
       url(../images/t/people-office.jpg);
     max-width: 768px;
-    min-height: 436px;
+    padding: 112px 0;
   }
 }
 
@@ -266,7 +262,6 @@ img {
       ),
       url(../images/t/people-office@2.jpg);
     max-width: 768px;
-    min-height: 436px;
   }
 }
 
@@ -278,7 +273,7 @@ img {
       ),
       url(../images/d/people-office.jpg);
     max-width: 1440px;
-    min-height: 600px;
+    padding: 188px 0;
   }
 }
 
@@ -290,7 +285,6 @@ img {
       ),
       url(../images/d/people-office@2.jpg);
     max-width: 1440px;
-    min-height: 600px;
   }
 }
 
@@ -301,22 +295,13 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  padding: 72px 0;
   margin: auto;
-  max-width: 216px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-title-headline {
     font-size: 56px;
     line-height: 1.07143;
-    padding: 112px 0 36px 0;
-    max-width: 496px;
-  }
-}
-@media screen and (min-width: 1158px) {
-  .hero-title-headline {
-    padding: 188px 0 48px 0;
   }
 }
 
@@ -365,7 +350,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .benefit-item-text {
@@ -408,7 +393,6 @@ img {
     font-size: 20px;
     line-height: 120%;
     color: #2e2f42;
-    padding-bottom: 8px;
   }
 
   .benefit-item-text {

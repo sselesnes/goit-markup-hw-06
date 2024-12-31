@@ -718,6 +718,7 @@ img {
 
 .footer-subscribe-button {
   margin-top: 16px;
+  max-width: 165px;
   height: 40px;
   padding: 8px 24px;
   border-radius: 4px;
@@ -779,11 +780,16 @@ img {
 @media screen and (min-width: 1158px) {
   .footer-grid {
     padding: 100px 15px;
-    gap: 120px;
+    width: 100%;
+    gap: 0;
+  }
+
+  .footer-cell {
+    margin-right: 120px;
   }
 
   .footer-subscribe {
-    margin-left: -96px;
+    margin-left: -40px;
   }
 }
 

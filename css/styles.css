@@ -1049,7 +1049,7 @@ img {
   }
 }
 /* #endregion subscribe modal */
-/* #region nav modal */
+/* #region navigation modal */
 .nav-overlay {
   position: fixed;
   top: 0;
@@ -1139,4 +1139,4 @@ img {
   gap: 48px;
 }
 
-/* #endregion nav modal */
+/* #endregion navigation modal */

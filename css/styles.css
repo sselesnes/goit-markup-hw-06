@@ -41,6 +41,12 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+:root {
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --grey: rgba(46, 47, 66, 0.7);
+}
+
 /* #endregion init */
 /* #region common */
 
@@ -134,7 +140,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic-bezier);
   }
 
   .header-nav-item:hover,
@@ -171,7 +177,7 @@ img {
     line-height: 1.167;
     letter-spacing: 0.04em;
     color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms var(--cubic-bezier);
   }
 
   .header-contacts:hover,
@@ -218,10 +224,7 @@ img {
 
 .hero-section {
   background: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(var(--grey), var(--grey)),
     url(../images/t/people-office.jpg);
 
   background-repeat: no-repeat;
@@ -257,7 +260,7 @@ img {
   height: 56px;
   display: block;
   margin: 72px auto 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .order-button:hover,
@@ -267,20 +270,14 @@ img {
 
 @media screen and (resolution >= 2dppx) and (max-width: 767px) {
   .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(var(--grey), var(--grey)),
       url(../images/t/people-office@2.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(var(--grey), var(--grey)),
       url(../images/t/people-office.jpg);
     max-width: 768px;
     padding: 112px 0;
@@ -296,10 +293,7 @@ img {
 
 @media screen and (resolution >= 2dppx) and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(var(--grey), var(--grey)),
       url(../images/t/people-office@2.jpg);
     max-width: 768px;
   }
@@ -307,10 +301,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(var(--grey), var(--grey)),
       url(../images/d/people-office.jpg);
     max-width: 1440px;
     padding: 188px 0;
@@ -323,10 +314,7 @@ img {
 
 @media screen and (resolution >= 2dppx) and (min-width: 1158px) {
   .hero-section {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
+    background-image: linear-gradient(var(--grey), var(--grey)),
       url(../images/d/people-office@2.jpg);
     max-width: 1440px;
   }
@@ -491,12 +479,12 @@ img {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
   padding: 0 16px;
 }
 
 .tmct-icon {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .tmct-icon-ellipse,
@@ -511,7 +499,7 @@ img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .tmct-icon-ellipse:hover,
@@ -561,7 +549,7 @@ img {
 .project-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms var(--cubic-bezier);
 }
 
 .project-item:hover .project-overlay {
@@ -582,7 +570,7 @@ img {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic-bezier);
 }
 
 .project-card {
@@ -647,7 +635,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* padding-bottom: 72px; */
 }
 
 .footer-subscribe-text {
@@ -804,8 +791,8 @@ img {
   pointer-events: none;
   opacity: 0;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);
 }
 
 .modal-overlay.is-open {
@@ -826,7 +813,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic-bezier);
 }
 
 .form-close-button {
@@ -843,14 +830,14 @@ img {
   cursor: pointer;
   position: absolute;
   padding: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier),
+    border 250ms var(--cubic-bezier);
 }
 
 .form-close-button .form-icon-close {
   fill: #2e2f42;
   transition-property: fill;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: var(--cubic-bezier);
   transition-duration: 250ms;
 }
 
@@ -924,7 +911,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--cubic-bezier);
 }
 
 .form-input:active,
@@ -937,7 +924,7 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--cubic-bezier);
   fill: #2e2f42;
 }
 
@@ -962,7 +949,7 @@ img {
   resize: none;
   outline: transparent;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms var(--cubic-bezier);
 }
 
 .form-textarea-prop {
@@ -995,9 +982,8 @@ img {
   fill: transparent;
   background-color: transparent;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier),
+    border 250ms var(--cubic-bezier), fill 250ms var(--cubic-bezier);
 }
 
 .form-agree-checkbox:checked + .form-agree-label .form-agree-icon {
@@ -1040,7 +1026,7 @@ img {
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 @media screen and (min-width: 768px) {
@@ -1062,8 +1048,8 @@ img {
   pointer-events: none;
   opacity: 0;
   background-color: #fcfcfc;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms var(--cubic-bezier),
+    visibility 250ms var(--cubic-bezier);
 }
 
 .nav-overlay.is-open {
@@ -1080,7 +1066,7 @@ img {
   width: 320px;
   height: 640px;
   padding: 72px 24px 40px 16px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic-bezier);
 }
 
 .nav-modal-flex {
